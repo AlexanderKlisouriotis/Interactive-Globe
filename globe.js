@@ -1,118 +1,445 @@
-// Country data with sample information
 const countryData = {
-    'USA': {
-        name: 'United States',
-        description: 'A federal republic in North America with diverse geography and economy.',
+    'AFG': {
+        name: 'Afghanistan',
+        description: 'Subject to US invasion, occupation, and covert operations spanning decades.',
         details: {
-            'Capital': 'Washington, D.C.',
-            'Population': '331 million',
-            'Area': '9.8 million km²',
-            'Currency': 'US Dollar (USD)'
+            'Capital': 'Kabul',
+            'Population': '40.1 million',
+            'Area': '652,000 km²'
         },
         color: '#ff6b6b'
     },
-    'CHN': {
-        name: 'China',
-        description: 'The world\'s most populous country located in East Asia.',
+    'AGO': {
+        name: 'Angola',
+        description: 'Site of US-backed proxy war during the Cold War.',
         details: {
-            'Capital': 'Beijing',
-            'Population': '1.4 billion',
-            'Area': '9.6 million km²',
-            'Currency': 'Chinese Yuan (CNY)'
+            'Capital': 'Luanda',
+            'Population': '36.7 million',
+            'Area': '1.25 million km²'
         },
         color: '#ff8c42'
     },
-    'IND': {
-        name: 'India',
-        description: 'A diverse country in South Asia with rich cultural heritage.',
+    'ARG': {
+        name: 'Argentina',
+        description: 'Received US support for military junta during the Dirty War.',
         details: {
-            'Capital': 'New Delhi',
-            'Population': '1.4 billion',
-            'Area': '3.3 million km²',
-            'Currency': 'Indian Rupee (INR)'
+            'Capital': 'Buenos Aires',
+            'Population': '45.8 million',
+            'Area': '2.78 million km²'
         },
-        color: '#ffd93d'
+        color: '#ff8c42'
     },
-    'DEU': {
-        name: 'Germany',
-        description: 'A central European country known for engineering and culture.',
+    'BOL': {
+        name: 'Bolivia',
+        description: 'Subject to US-supported coups and counter-insurgency operations.',
         details: {
-            'Capital': 'Berlin',
-            'Population': '83 million',
-            'Area': '357,000 km²',
-            'Currency': 'Euro (EUR)'
+            'Capital': 'Sucre (constitutional), La Paz (administrative)',
+            'Population': '12.1 million',
+            'Area': '1.10 million km²'
         },
-        color: '#6bcf7f'
+        color: '#ff8c42'
     },
-    'FRA': {
-        name: 'France',
-        description: 'A Western European country famous for art, culture, and cuisine.',
+    'BIH': {
+        name: 'Bosnia and Herzegovina',
+        description: 'Target of NATO bombing campaign during the Bosnian War.',
         details: {
-            'Capital': 'Paris',
-            'Population': '67 million',
-            'Area': '643,000 km²',
-            'Currency': 'Euro (EUR)'
+            'Capital': 'Sarajevo',
+            'Population': '3.3 million',
+            'Area': '51,000 km²'
         },
-        color: '#4d96ff'
-    },
-    'GBR': {
-        name: 'United Kingdom',
-        description: 'An island nation off the coast of Western Europe.',
-        details: {
-            'Capital': 'London',
-            'Population': '67 million',
-            'Area': '243,000 km²',
-            'Currency': 'British Pound (GBP)'
-        },
-        color: '#9d4edd'
-    },
-    'JPN': {
-        name: 'Japan',
-        description: 'An island nation in East Asia known for technology and culture.',
-        details: {
-            'Capital': 'Tokyo',
-            'Population': '125 million',
-            'Area': '377,000 km²',
-            'Currency': 'Japanese Yen (JPY)'
-        },
-        color: '#ff1493'
-    },
-    'AUS': {
-        name: 'Australia',
-        description: 'A country and continent in the Southern Hemisphere.',
-        details: {
-            'Capital': 'Canberra',
-            'Population': '25 million',
-            'Area': '7.7 million km²',
-            'Currency': 'Australian Dollar (AUD)'
-        },
-        color: '#00d4ff'
+        color: '#ff6b6b'
     },
     'BRA': {
         name: 'Brazil',
-        description: 'The largest country in South America with the Amazon rainforest.',
+        description: 'Subject to US-supported military coup in 1964.',
         details: {
             'Capital': 'Brasília',
             'Population': '215 million',
-            'Area': '8.5 million km²',
-            'Currency': 'Brazilian Real (BRL)'
+            'Area': '8.5 million km²'
         },
-        color: '#90ee90'
+        color: '#ff8c42'
+    },
+    'CHL': {
+        name: 'Chile',
+        description: 'Target of CIA-backed coup against Salvador Allende.',
+        details: {
+            'Capital': 'Santiago',
+            'Population': '19.5 million',
+            'Area': '756,000 km²'
+        },
+        color: '#ff8c42'
+    },
+    'COL': {
+        name: 'Colombia',
+        description: 'Major recipient of US military aid through Plan Colombia.',
+        details: {
+            'Capital': 'Bogotá',
+            'Population': '52.1 million',
+            'Area': '1.14 million km²'
+        },
+        color: '#ff8c42'
+    },
+    'COD': {
+        name: 'Democratic Republic of the Congo',
+        description: 'Site of CIA involvement in coup and assassination of Patrice Lumumba.',
+        details: {
+            'Capital': 'Kinshasa',
+            'Population': '102 million',
+            'Area': '2.34 million km²'
+        },
+        color: '#ff8c42'
+    },
+    'CUB': {
+        name: 'Cuba',
+        description: 'Subject to US embargo, invasion attempts, and covert operations.',
+        details: {
+            'Capital': 'Havana',
+            'Population': '11.3 million',
+            'Area': '109,000 km²'
+        },
+        color: '#ff8c42'
+    },
+    'DOM': {
+        name: 'Dominican Republic',
+        description: 'Site of US military intervention during 1965 civil war.',
+        details: {
+            'Capital': 'Santo Domingo',
+            'Population': '11.1 million',
+            'Area': '48,000 km²'
+        },
+        color: '#ff6b6b'
+    },
+    'EGY': {
+        name: 'Egypt',
+        description: 'Major recipient of US military aid supporting various regimes.',
+        details: {
+            'Capital': 'Cairo',
+            'Population': '109 million',
+            'Area': '1.01 million km²'
+        },
+        color: '#ff8c42'
+    },
+    'SLV': {
+        name: 'El Salvador',
+        description: 'Major recipient of US military aid during civil war.',
+        details: {
+            'Capital': 'San Salvador',
+            'Population': '6.5 million',
+            'Area': '21,000 km²'
+        },
+        color: '#ff8c42'
+    },
+    'DEU': {
+        name: 'Germany',
+        description: 'Site of US military occupation and ongoing intelligence operations.',
+        details: {
+            'Capital': 'Berlin',
+            'Population': '83 million',
+            'Area': '357,000 km²'
+        },
+        color: '#ffd93d'
+    },
+    'GRC': {
+        name: 'Greece',
+        description: 'Major recipient of US military aid during civil war.',
+        details: {
+            'Capital': 'Athens',
+            'Population': '10.4 million',
+            'Area': '132,000 km²'
+        },
+        color: '#ff8c42'
+    },
+    'GTM': {
+        name: 'Guatemala',
+        description: 'Site of CIA-orchestrated coup in 1954 leading to civil war.',
+        details: {
+            'Capital': 'Guatemala City',
+            'Population': '17.1 million',
+            'Area': '109,000 km²'
+        },
+        color: '#ff8c42'
+    },
+    'HTI': {
+        name: 'Haiti',
+        description: 'Subject to multiple US military interventions and occupations.',
+        details: {
+            'Capital': 'Port-au-Prince',
+            'Population': '11.6 million',
+            'Area': '27,000 km²'
+        },
+        color: '#ff6b6b'
+    },
+    'HND': {
+        name: 'Honduras',
+        description: 'Used as base for US operations and received military support.',
+        details: {
+            'Capital': 'Tegucigalpa',
+            'Population': '10.3 million',
+            'Area': '112,000 km²'
+        },
+        color: '#ff8c42'
+    },
+    'IDN': {
+        name: 'Indonesia',
+        description: 'Received US support for military coup and subsequent regime.',
+        details: {
+            'Capital': 'Jakarta',
+            'Population': '279 million',
+            'Area': '1.91 million km²'
+        },
+        color: '#ff8c42'
+    },
+    'IRN': {
+        name: 'Iran',
+        description: 'Subject to CIA coup, sanctions, and ongoing political pressure.',
+        details: {
+            'Capital': 'Tehran',
+            'Population': '88.6 million',
+            'Area': '1.65 million km²'
+        },
+        color: '#ff8c42'
+    },
+    'IRQ': {
+        name: 'Iraq',
+        description: 'Subject to multiple US invasions, bombing campaigns, and sanctions.',
+        details: {
+            'Capital': 'Baghdad',
+            'Population': '43.5 million',
+            'Area': '438,000 km²'
+        },
+        color: '#ff6b6b'
+    },
+    'ITA': {
+        name: 'Italy',
+        description: 'Target of CIA covert operations to influence elections.',
+        details: {
+            'Capital': 'Rome',
+            'Population': '59.1 million',
+            'Area': '301,000 km²'
+        },
+        color: '#ffd93d'
+    },
+    'JPN': {
+        name: 'Japan',
+        description: 'Subject to US military occupation and ongoing basing.',
+        details: {
+            'Capital': 'Tokyo',
+            'Population': '125 million',
+            'Area': '377,000 km²'
+        },
+        color: '#ffd93d'
+    },
+    'KOR': {
+        name: 'South Korea',
+        description: 'Site of US military intervention and ongoing presence.',
+        details: {
+            'Capital': 'Seoul',
+            'Population': '51.7 million',
+            'Area': '100,000 km²'
+        },
+        color: '#ff6b6b'
+    },
+    'LAO': {
+        name: 'Laos',
+        description: 'Subject to massive secret US bombing campaign.',
+        details: {
+            'Capital': 'Vientiane',
+            'Population': '7.5 million',
+            'Area': '237,000 km²'
+        },
+        color: '#ff6b6b'
+    },
+    'LBN': {
+        name: 'Lebanon',
+        description: 'Site of multiple US military interventions and political involvement.',
+        details: {
+            'Capital': 'Beirut',
+            'Population': '5.6 million',
+            'Area': '10,000 km²'
+        },
+        color: '#ff6b6b'
+    },
+    'LBY': {
+        name: 'Libya',
+        description: 'Subject to US bombing campaigns and sanctions.',
+        details: {
+            'Capital': 'Tripoli',
+            'Population': '6.8 million',
+            'Area': '1.76 million km²'
+        },
+        color: '#ff6b6b'
+    },
+    'NIC': {
+        name: 'Nicaragua',
+        description: 'Target of US-backed Contra war and covert operations.',
+        details: {
+            'Capital': 'Managua',
+            'Population': '6.9 million',
+            'Area': '130,000 km²'
+        },
+        color: '#ff8c42'
+    },
+    'PAK': {
+        name: 'Pakistan',
+        description: 'Partner in covert operations and target of drone strikes.',
+        details: {
+            'Capital': 'Islamabad',
+            'Population': '242 million',
+            'Area': '881,000 km²'
+        },
+        color: '#ff8c42'
+    },
+    'PAN': {
+        name: 'Panama',
+        description: 'Subject to US military invasion in 1989.',
+        details: {
+            'Capital': 'Panama City',
+            'Population': '4.4 million',
+            'Area': '75,000 km²'
+        },
+        color: '#ff6b6b'
+    },
+    'PRY': {
+        name: 'Paraguay',
+        description: 'Received US support for authoritarian regime during Cold War.',
+        details: {
+            'Capital': 'Asunción',
+            'Population': '6.7 million',
+            'Area': '407,000 km²'
+        },
+        color: '#ff8c42'
+    },
+    'PER': {
+        name: 'Peru',
+        description: 'Received US military aid and counter-insurgency support.',
+        details: {
+            'Capital': 'Lima',
+            'Population': '34.1 million',
+            'Area': '1.29 million km²'
+        },
+        color: '#ff8c42'
+    },
+    'PHL': {
+        name: 'Philippines',
+        description: 'Site of US military bases and counter-insurgency support.',
+        details: {
+            'Capital': 'Manila',
+            'Population': '117 million',
+            'Area': '300,000 km²'
+        },
+        color: '#ff8c42'
+    },
+    'PSE': {
+        name: 'Palestine',
+        description: 'Subject to US diplomatic and military support for Israeli occupation.',
+        details: {
+            'Capital': 'Jerusalem (claimed), Ramallah (administrative)',
+            'Population': '5.4 million',
+            'Area': '6,020 km²'
+        },
+        color: '#ff8c42'
+    },
+    'RUS': {
+        name: 'Russia',
+        description: 'Subject to US sanctions and ongoing political pressure.',
+        details: {
+            'Capital': 'Moscow',
+            'Population': '144 million',
+            'Area': '17.1 million km²'
+        },
+        color: '#ff8c42'
+    },
+    'SAU': {
+        name: 'Saudi Arabia',
+        description: 'Major US ally with extensive military cooperation.',
+        details: {
+            'Capital': 'Riyadh',
+            'Population': '36.9 million',
+            'Area': '2.15 million km²'
+        },
+        color: '#ff8c42'
+    },
+    'SOM': {
+        name: 'Somalia',
+        description: 'Subject to US military intervention and drone strikes.',
+        details: {
+            'Capital': 'Mogadishu',
+            'Population': '17.1 million',
+            'Area': '638,000 km²'
+        },
+        color: '#ff6b6b'
     },
     'ZAF': {
         name: 'South Africa',
-        description: 'A country at the southern tip of Africa with diverse landscapes.',
+        description: 'Received US engagement with apartheid regime during Cold War.',
         details: {
             'Capital': 'Pretoria (Executive), Cape Town (Legislative), Bloemfontein (Judicial)',
             'Population': '60 million',
-            'Area': '1.2 million km²',
-            'Currency': 'South African Rand (ZAR)'
+            'Area': '1.22 million km²'
         },
-        color: '#ffa500'
+        color: '#ffd93d'
+    },
+    'SYR': {
+        name: 'Syria',
+        description: 'Subject to US sanctions, bombing campaigns, and covert operations.',
+        details: {
+            'Capital': 'Damascus',
+            'Population': '22.1 million',
+            'Area': '185,000 km²'
+        },
+        color: '#ff6b6b'
+    },
+    'TLS': {
+        name: 'Timor-Leste',
+        description: 'Subject to US support for Indonesian occupation.',
+        details: {
+            'Capital': 'Dili',
+            'Population': '1.3 million',
+            'Area': '15,000 km²'
+        },
+        color: '#ff8c42'
+    },
+    'URY': {
+        name: 'Uruguay',
+        description: 'Received US support for military-civilian dictatorship.',
+        details: {
+            'Capital': 'Montevideo',
+            'Population': '3.4 million',
+            'Area': '176,000 km²'
+        },
+        color: '#ff8c42'
+    },
+    'VEN': {
+        name: 'Venezuela',
+        description: 'Subject to US sanctions and political pressure.',
+        details: {
+            'Capital': 'Caracas',
+            'Population': '28.2 million',
+            'Area': '916,000 km²'
+        },
+        color: '#ff8c42'
+    },
+    'VNM': {
+        name: 'Vietnam',
+        description: 'Site of massive US military intervention and bombing campaigns.',
+        details: {
+            'Capital': 'Hanoi',
+            'Population': '98.2 million',
+            'Area': '331,000 km²'
+        },
+        color: '#ff6b6b'
+    },
+    'YEM': {
+        name: 'Yemen',
+        description: 'Subject to US drone strikes and support for Saudi-led campaign.',
+        details: {
+            'Capital': "Sana'a",
+            'Population': '33.7 million',
+            'Area': '528,000 km²'
+        },
+        color: '#ff6b6b'
     }
 };
-
-
 
 // Initialize globe using globe.gl library
 async function initializeGlobe() {
@@ -133,7 +460,6 @@ async function initializeGlobe() {
 
     // Use world countries dataset instead of limited countryCoordinates
     const countryCoordinates = worldCountries;
-
     // Create hex bin data points
     const countryPoints = [];
     Object.entries(countryCoordinates).forEach(([code, coords]) => {
@@ -160,7 +486,7 @@ async function initializeGlobe() {
         .hexBinPointsData(countryPoints)
         .hexBinPointLat(d => d.lat)
         .hexBinPointLng(d => d.lng)
-        .hexBinResolution(2)
+        .hexBinResolution(3)
         .hexMargin(0)
         .hexBinMerge(false)
         .hexTopColor(d => {
@@ -223,7 +549,7 @@ async function initializeGlobe() {
         .labelLng(d => d.lng)
         .labelText(d => d.text)
         .labelSize(0.8)
-        .labelDotRadius(0.9)
+        .labelDotRadius(.8)
         .labelColor(() => '#ffffff')
         .onLabelClick((label, event) => {
             if (label && label.countryCode) {
