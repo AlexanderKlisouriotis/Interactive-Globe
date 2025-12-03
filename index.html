@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Globe - globe.gl</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div id="canvas-container"></div>
-    
+
     <!-- Info Panel -->
     <div id="info-panel" class="info-panel hidden">
         <button id="close-btn" class="close-btn">&times;</button>
@@ -16,15 +18,28 @@
             <h2 id="country-name"></h2>
             <p id="country-description"></p>
             <ul id="country-details"></ul>
+
+            <!-- Sources Dropdown -->
+            <div id="sources-container" class="sources-container">
+                <button id="sources-toggle" class="sources-toggle">
+                    Sources <span class="arrow">▼</span>
+                </button>
+                <ul id="sources-list" class="sources-list hidden">
+                    <!-- Populated by JS -->
+                </ul>
+            </div>
         </div>
     </div>
 
     <!-- Loading indicator -->
     <div id="loading" class="loading">Loading globe...</div>
 
+    <!-- Import Three.js (required for custom objects) -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
     <!-- Import globe.gl from CDN -->
     <script src="https://cdn.jsdelivr.net/npm/globe.gl@2.45.0/dist/globe.gl.js"></script>
     <script src="worldCountries.js"></script>
     <script src="globe.js"></script>
 </body>
+
 </html>

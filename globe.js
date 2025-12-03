@@ -1,3 +1,4 @@
+console.log('=== globe.js loaded ===');
 const countryData = {
     'AFG': {
         name: 'Afghanistan',
@@ -7,7 +8,7 @@ const countryData = {
             'Population': '40.1 million',
             'Area': '652,000 km²'
         },
-        color: '#ff6b6b'
+        color: '#FF0000'
     },
     'AGO': {
         name: 'Angola',
@@ -17,7 +18,7 @@ const countryData = {
             'Population': '36.7 million',
             'Area': '1.25 million km²'
         },
-        color: '#ff8c42'
+        color: '#ff9600'
     },
     'ARG': {
         name: 'Argentina',
@@ -27,7 +28,7 @@ const countryData = {
             'Population': '45.8 million',
             'Area': '2.78 million km²'
         },
-        color: '#ff8c42'
+        color: '#ff9600'
     },
     'BOL': {
         name: 'Bolivia',
@@ -37,7 +38,7 @@ const countryData = {
             'Population': '12.1 million',
             'Area': '1.10 million km²'
         },
-        color: '#ff8c42'
+        color: '#ff9600'
     },
     'BIH': {
         name: 'Bosnia and Herzegovina',
@@ -47,7 +48,7 @@ const countryData = {
             'Population': '3.3 million',
             'Area': '51,000 km²'
         },
-        color: '#ff6b6b'
+        color: '#FF0000'
     },
     'BRA': {
         name: 'Brazil',
@@ -57,7 +58,7 @@ const countryData = {
             'Population': '215 million',
             'Area': '8.5 million km²'
         },
-        color: '#ff8c42'
+        color: '#ff9600'
     },
     'CHL': {
         name: 'Chile',
@@ -67,7 +68,7 @@ const countryData = {
             'Population': '19.5 million',
             'Area': '756,000 km²'
         },
-        color: '#ff8c42'
+        color: '#ff9600'
     },
     'COL': {
         name: 'Colombia',
@@ -77,7 +78,7 @@ const countryData = {
             'Population': '52.1 million',
             'Area': '1.14 million km²'
         },
-        color: '#ff8c42'
+        color: '#ff9600'
     },
     'COD': {
         name: 'Democratic Republic of the Congo',
@@ -87,7 +88,7 @@ const countryData = {
             'Population': '102 million',
             'Area': '2.34 million km²'
         },
-        color: '#ff8c42'
+        color: '#ff9600'
     },
     'CUB': {
         name: 'Cuba',
@@ -97,7 +98,7 @@ const countryData = {
             'Population': '11.3 million',
             'Area': '109,000 km²'
         },
-        color: '#ff8c42'
+        color: '#ff9600'
     },
     'DOM': {
         name: 'Dominican Republic',
@@ -107,7 +108,7 @@ const countryData = {
             'Population': '11.1 million',
             'Area': '48,000 km²'
         },
-        color: '#ff6b6b'
+        color: '#FF0000'
     },
     'EGY': {
         name: 'Egypt',
@@ -117,7 +118,7 @@ const countryData = {
             'Population': '109 million',
             'Area': '1.01 million km²'
         },
-        color: '#ff8c42'
+        color: '#ff9600'
     },
     'SLV': {
         name: 'El Salvador',
@@ -127,7 +128,7 @@ const countryData = {
             'Population': '6.5 million',
             'Area': '21,000 km²'
         },
-        color: '#ff8c42'
+        color: '#ff9600'
     },
     'DEU': {
         name: 'Germany',
@@ -137,7 +138,7 @@ const countryData = {
             'Population': '83 million',
             'Area': '357,000 km²'
         },
-        color: '#ffd93d'
+        color: '#ffff00'
     },
     'GRC': {
         name: 'Greece',
@@ -147,7 +148,7 @@ const countryData = {
             'Population': '10.4 million',
             'Area': '132,000 km²'
         },
-        color: '#ff8c42'
+        color: '#ff9600'
     },
     'GTM': {
         name: 'Guatemala',
@@ -157,7 +158,7 @@ const countryData = {
             'Population': '17.1 million',
             'Area': '109,000 km²'
         },
-        color: '#ff8c42'
+        color: '#ff9600'
     },
     'HTI': {
         name: 'Haiti',
@@ -167,7 +168,7 @@ const countryData = {
             'Population': '11.6 million',
             'Area': '27,000 km²'
         },
-        color: '#ff6b6b'
+        color: '#FF0000'
     },
     'HND': {
         name: 'Honduras',
@@ -177,7 +178,7 @@ const countryData = {
             'Population': '10.3 million',
             'Area': '112,000 km²'
         },
-        color: '#ff8c42'
+        color: '#ff9600'
     },
     'IDN': {
         name: 'Indonesia',
@@ -187,7 +188,7 @@ const countryData = {
             'Population': '279 million',
             'Area': '1.91 million km²'
         },
-        color: '#ff8c42'
+        color: '#ff9600'
     },
     'IRN': {
         name: 'Iran',
@@ -197,7 +198,7 @@ const countryData = {
             'Population': '88.6 million',
             'Area': '1.65 million km²'
         },
-        color: '#ff8c42'
+        color: '#ff9600'
     },
     'IRQ': {
         name: 'Iraq',
@@ -207,7 +208,7 @@ const countryData = {
             'Population': '43.5 million',
             'Area': '438,000 km²'
         },
-        color: '#ff6b6b'
+        color: '#FF0000'
     },
     'ITA': {
         name: 'Italy',
@@ -217,7 +218,7 @@ const countryData = {
             'Population': '59.1 million',
             'Area': '301,000 km²'
         },
-        color: '#ffd93d'
+        color: '#ffff00'
     },
     'JPN': {
         name: 'Japan',
@@ -227,7 +228,7 @@ const countryData = {
             'Population': '125 million',
             'Area': '377,000 km²'
         },
-        color: '#ffd93d'
+        color: '#ffff00'
     },
     'KOR': {
         name: 'South Korea',
@@ -237,7 +238,7 @@ const countryData = {
             'Population': '51.7 million',
             'Area': '100,000 km²'
         },
-        color: '#ff6b6b'
+        color: '#FF0000'
     },
     'LAO': {
         name: 'Laos',
@@ -247,7 +248,7 @@ const countryData = {
             'Population': '7.5 million',
             'Area': '237,000 km²'
         },
-        color: '#ff6b6b'
+        color: '#FF0000'
     },
     'LBN': {
         name: 'Lebanon',
@@ -257,7 +258,7 @@ const countryData = {
             'Population': '5.6 million',
             'Area': '10,000 km²'
         },
-        color: '#ff6b6b'
+        color: '#FF0000'
     },
     'LBY': {
         name: 'Libya',
@@ -267,7 +268,7 @@ const countryData = {
             'Population': '6.8 million',
             'Area': '1.76 million km²'
         },
-        color: '#ff6b6b'
+        color: '#FF0000'
     },
     'NIC': {
         name: 'Nicaragua',
@@ -277,7 +278,7 @@ const countryData = {
             'Population': '6.9 million',
             'Area': '130,000 km²'
         },
-        color: '#ff8c42'
+        color: '#ff9600'
     },
     'PAK': {
         name: 'Pakistan',
@@ -287,7 +288,7 @@ const countryData = {
             'Population': '242 million',
             'Area': '881,000 km²'
         },
-        color: '#ff8c42'
+        color: '#ff9600'
     },
     'PAN': {
         name: 'Panama',
@@ -297,7 +298,7 @@ const countryData = {
             'Population': '4.4 million',
             'Area': '75,000 km²'
         },
-        color: '#ff6b6b'
+        color: '#FF0000'
     },
     'PRY': {
         name: 'Paraguay',
@@ -307,7 +308,7 @@ const countryData = {
             'Population': '6.7 million',
             'Area': '407,000 km²'
         },
-        color: '#ff8c42'
+        color: '#ff9600'
     },
     'PER': {
         name: 'Peru',
@@ -317,7 +318,7 @@ const countryData = {
             'Population': '34.1 million',
             'Area': '1.29 million km²'
         },
-        color: '#ff8c42'
+        color: '#ff9600'
     },
     'PHL': {
         name: 'Philippines',
@@ -327,7 +328,7 @@ const countryData = {
             'Population': '117 million',
             'Area': '300,000 km²'
         },
-        color: '#ff8c42'
+        color: '#ff9600'
     },
     'PSE': {
         name: 'Palestine',
@@ -337,7 +338,7 @@ const countryData = {
             'Population': '5.4 million',
             'Area': '6,020 km²'
         },
-        color: '#ff8c42'
+        color: '#ff9600'
     },
     'RUS': {
         name: 'Russia',
@@ -347,7 +348,7 @@ const countryData = {
             'Population': '144 million',
             'Area': '17.1 million km²'
         },
-        color: '#ff8c42'
+        color: '#ff9600'
     },
     'SAU': {
         name: 'Saudi Arabia',
@@ -357,7 +358,7 @@ const countryData = {
             'Population': '36.9 million',
             'Area': '2.15 million km²'
         },
-        color: '#ff8c42'
+        color: '#ff9600'
     },
     'SOM': {
         name: 'Somalia',
@@ -367,7 +368,7 @@ const countryData = {
             'Population': '17.1 million',
             'Area': '638,000 km²'
         },
-        color: '#ff6b6b'
+        color: '#FF0000'
     },
     'ZAF': {
         name: 'South Africa',
@@ -377,7 +378,7 @@ const countryData = {
             'Population': '60 million',
             'Area': '1.22 million km²'
         },
-        color: '#ffd93d'
+        color: '#ffff00'
     },
     'SYR': {
         name: 'Syria',
@@ -387,7 +388,7 @@ const countryData = {
             'Population': '22.1 million',
             'Area': '185,000 km²'
         },
-        color: '#ff6b6b'
+        color: '#FF0000'
     },
     'TLS': {
         name: 'Timor-Leste',
@@ -397,7 +398,7 @@ const countryData = {
             'Population': '1.3 million',
             'Area': '15,000 km²'
         },
-        color: '#ff8c42'
+        color: '#ff9600'
     },
     'URY': {
         name: 'Uruguay',
@@ -407,7 +408,7 @@ const countryData = {
             'Population': '3.4 million',
             'Area': '176,000 km²'
         },
-        color: '#ff8c42'
+        color: '#ff9600'
     },
     'VEN': {
         name: 'Venezuela',
@@ -417,7 +418,7 @@ const countryData = {
             'Population': '28.2 million',
             'Area': '916,000 km²'
         },
-        color: '#ff8c42'
+        color: '#ff9600'
     },
     'VNM': {
         name: 'Vietnam',
@@ -427,7 +428,7 @@ const countryData = {
             'Population': '98.2 million',
             'Area': '331,000 km²'
         },
-        color: '#ff6b6b'
+        color: '#FF0000'
     },
     'YEM': {
         name: 'Yemen',
@@ -437,14 +438,15 @@ const countryData = {
             'Population': '33.7 million',
             'Area': '528,000 km²'
         },
-        color: '#ff6b6b'
+        color: '#FF0000'
     }
 };
 
 // Initialize globe using globe.gl library
 async function initializeGlobe() {
+    console.log('=== initializeGlobe() called ===');
     const canvas = document.getElementById('canvas-container');
-    
+
     // Create globe instance with globe.gl
     const world = Globe()
         .globeImageUrl('//cdn.jsdelivr.net/npm/three-globe/example/img/earth-day.jpg')
@@ -465,66 +467,53 @@ async function initializeGlobe() {
     Object.entries(countryCoordinates).forEach(([code, coords]) => {
         const country = countryData[code];
         // Add point for every country, whether it has metadata or not
-        const angle = 0;
-        const distance = 2;
-        const lat = coords.lat + Math.cos(angle) * distance;
-        const lng = coords.lng + Math.sin(angle) * distance;
-        
+        // Use exact coordinates to align with labels
         countryPoints.push({
-            lat,
-            lng,
+            lat: coords.lat,
+            lng: coords.lng,
             countryCode: code,
             countryName: country?.name || code
         });
     });
 
     // Track hovered hex
-    let hoveredHex = null;
+    let hoveredCountry = null;
 
-    // Add hex bin layer
+    // Add circular pins using points layer (simpler and no THREE.js conflicts)
     world
-        .hexBinPointsData(countryPoints)
-        .hexBinPointLat(d => d.lat)
-        .hexBinPointLng(d => d.lng)
-        .hexBinResolution(3)
-        .hexMargin(0)
-        .hexBinMerge(false)
-        .hexTopColor(d => {
-            // If this is the hovered hex, highlight it
-            if (hoveredHex && d.points[0]?.countryCode === hoveredHex) {
-                return '#ffff00'; // Yellow highlight
+        .pointsData(countryPoints)
+        .pointLat(d => d.lat)
+        .pointLng(d => d.lng)
+        .pointColor(d => {
+            const countryCode = d.countryCode;
+            // Highlight on hover
+            if (hoveredCountry && countryCode === hoveredCountry) {
+                return '#08FF08'; // Yellow highlight
             }
-            
-            const countryCode = d.points[0]?.countryCode;
-            if (countryCode && countryData[countryCode]) {
-                return countryData[countryCode].color;
-            }
-            return '#cccccc';
+            const country = countryData[countryCode];
+            return country?.color || '#cccccc';
         })
-        .hexSideColor(() => '#666666')
-        .hexAltitude(d => Math.sqrt(d.sumWeight) * 0.08)
-        .hexLabel(d => {
-            if (d.points && d.points.length > 0) {
-                return d.points[0].countryName;
-            }
-            return 'Unknown';
-        })
-        .onHexHover((hexagon) => {
-            if (hexagon && hexagon.points && hexagon.points.length > 0) {
+        .pointAltitude(.15)
+        .pointRadius(0.7)
+        .pointLabel(d => d.countryName)
+        .onPointHover((point) => {
+            if (point && point.countryCode) {
                 canvas.style.cursor = 'pointer';
-                hoveredHex = hexagon.points[0].countryCode;
+                hoveredCountry = point.countryCode;
                 // Refresh colors by updating data
-                world.hexBinPointsData(world.hexBinPointsData());
+                world.pointsData(world.pointsData());
             } else {
                 canvas.style.cursor = 'default';
-                hoveredHex = null;
-                world.hexBinPointsData(world.hexBinPointsData());
+                if (hoveredCountry) {
+                    hoveredCountry = null;
+                    world.pointsData(world.pointsData());
+                }
             }
         })
-        .onHexClick((hexagon, event) => {
-            if (hexagon && hexagon.points && hexagon.points.length > 0) {
-                const countryCode = hexagon.points[0].countryCode;
-                if (countryCode && countryData[countryCode]) {
+        .onPointClick((point) => {
+            if (point && point.countryCode) {
+                const countryCode = point.countryCode;
+                if (countryData[countryCode]) {
                     showCountryInfo(countryCode, world);
                 }
             }
@@ -548,8 +537,8 @@ async function initializeGlobe() {
         .labelLat(d => d.lat)
         .labelLng(d => d.lng)
         .labelText(d => d.text)
-        .labelSize(0.8)
-        .labelDotRadius(.8)
+        .labelSize(0.7)
+        .labelDotRadius(1)  // Increased from 0.8 to 1.5 for easier clicking
         .labelColor(() => '#ffffff')
         .onLabelClick((label, event) => {
             if (label && label.countryCode) {
@@ -572,7 +561,7 @@ async function initializeGlobe() {
     world.controls().addEventListener('end', () => {
         setTimeout(() => {
             world.controls().autoRotate = true;
-        }, 3000);
+        }, 15000);
     });
 
     // Hide loading
@@ -597,28 +586,60 @@ function showCountryInfo(countryCode, world) {
         detailsList.appendChild(li);
     });
 
+    // Populate sources
+    const sourcesList = document.getElementById('sources-list');
+    sourcesList.innerHTML = '';
+
+    // Placeholder sources
+    const sources = [
+        { name: 'Country Report 2024.pdf', url: '#' },
+        { name: 'Historical Analysis.docx', url: '#' },
+        { name: 'External Reference Link', url: '#' }
+    ];
+
+    sources.forEach(source => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = source.url;
+        a.textContent = source.name;
+        a.target = '_blank';
+        li.appendChild(a);
+        sourcesList.appendChild(li);
+    });
+
+    // Reset dropdown state
+    const sourcesToggle = document.getElementById('sources-toggle');
+    const sourcesListEl = document.getElementById('sources-list');
+
+    if (sourcesToggle && sourcesListEl) {
+        sourcesToggle.classList.remove('active');
+        sourcesListEl.classList.add('hidden');
+    }
+
     // Show panel
     const panel = document.getElementById('info-panel');
     panel.classList.remove('hidden');
     panel.classList.add('visible');
 
-    // Move camera to country
-    const countryCoordinates = {
-        'USA': { lat: 37.0902, lng: -95.7129 },
-        'CHN': { lat: 35.8617, lng: 104.1954 },
-        'IND': { lat: 20.5937, lng: 78.9629 },
-        'DEU': { lat: 51.1657, lng: 10.4515 },
-        'FRA': { lat: 46.2276, lng: 2.2137 },
-        'GBR': { lat: 55.3781, lng: -3.4360 },
-        'JPN': { lat: 36.2048, lng: 138.2529 },
-        'AUS': { lat: -25.2744, lng: 133.7751 },
-        'BRA': { lat: -14.2350, lng: -51.9253 },
-        'ZAF': { lat: -30.5595, lng: 22.9375 }
-    };
+    // Stop auto-rotation when panel is open
+    if (world) {
+        world.controls().autoRotate = false;
+    }
 
+    // Move camera to country
+    const countryCoordinates = worldCountries;
+
+    console.log('Country Code:', countryCode);
+    console.log('World Countries:', countryCoordinates);
     const coords = countryCoordinates[countryCode];
+    console.log('Coords for', countryCode, ':', coords);
+    console.log('World object:', world);
+
     if (coords && world) {
+        console.log('Moving camera to:', { lat: coords.lat, lng: coords.lng, altitude: 2 });
         world.pointOfView({ lat: coords.lat, lng: coords.lng, altitude: 2 }, 800);
+    } else {
+        console.log('Camera NOT moving - coords:', coords, 'world:', world);
     }
 }
 
@@ -646,7 +667,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         world.controls().autoRotate = false;
     });
 
-    document.getElementById('info-panel').addEventListener('mouseleave', () => {
-        world.controls().autoRotate = true;
-    });
+    // Sources toggle
+    const sourcesToggle = document.getElementById('sources-toggle');
+    const sourcesList = document.getElementById('sources-list');
+
+    if (sourcesToggle && sourcesList) {
+        sourcesToggle.addEventListener('click', () => {
+            sourcesToggle.classList.toggle('active');
+            sourcesList.classList.toggle('hidden');
+        });
+    }
 });
