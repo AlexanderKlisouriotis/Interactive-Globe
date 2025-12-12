@@ -587,25 +587,29 @@ function showCountryInfo(countryCode, world) {
     });
 
     // Populate sources
+    // Populate sources from sources.js
     const sourcesList = document.getElementById('sources-list');
     sourcesList.innerHTML = '';
 
-    // Placeholder sources
-    const sources = [
-        { name: 'Country Report 2024.pdf', url: '#' },
-        { name: 'Historical Analysis.docx', url: '#' },
-        { name: 'External Reference Link', url: '#' }
-    ];
+    const sources = countrySources[countryCode] || [];
 
-    sources.forEach(source => {
+    if (sources.length > 0) {
+        sources.forEach(source => {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            a.href = source.url;
+            a.textContent = source.name;
+            a.target = '_blank';
+            li.appendChild(a);
+            sourcesList.appendChild(li);
+        });
+    } else {
         const li = document.createElement('li');
-        const a = document.createElement('a');
-        a.href = source.url;
-        a.textContent = source.name;
-        a.target = '_blank';
-        li.appendChild(a);
+        li.textContent = 'No sources available';
+        li.style.color = '#888';
+        li.style.padding = '5px 0';
         sourcesList.appendChild(li);
-    });
+    }
 
     // Reset dropdown state
     const sourcesToggle = document.getElementById('sources-toggle');
